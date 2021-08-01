@@ -11,6 +11,14 @@ Essentially, it will create interesting facts at random and display them on the 
 ```python 
 pip install pywebio
 ```
+### Import the modules:
+```python
+import json
+import requests
+from pywebio.input import *
+from pywebio.output import *
+from pywebio.session import *
+```
 ### Stepwise explanation: 
 - Import all the required modules
 - Send GET requests with the ***requests.request()*** method, and use the ***json.loads()*** function to parse a valid JSON message and transform it to a Python Dictionary. Since the requests function will create a dictionary of items, and we only need text, so we will pass response.text inside the json module.
